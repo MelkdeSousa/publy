@@ -10,8 +10,8 @@ Webapp to publicize your company's contributors profile
 
 ## Requirements
 
-  - Diagram Entity-Relationship (DER)
-  - API Restful in .NET Core 5
+  - [x] Diagram Entity-Relationship (DER)
+  - [x] API Restful in .NET Core 5
   - PostgreSQL with Entity Framework (ORM)
   - CRUD of Entities:
       - Collaborator:
