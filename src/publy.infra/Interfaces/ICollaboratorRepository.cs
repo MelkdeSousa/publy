@@ -6,6 +6,7 @@ namespace Publy.Infra.Interfaces
 {
   public interface ICollaboratorRepository : IBaseRepository<Collaborator>
   {
+    Task<Collaborator> GetByEmail(string email);
     Task<Collaborator> GetByName(string name);
     Task<List<Collaborator>> SearchByName(string name);
   }

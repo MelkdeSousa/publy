@@ -17,6 +17,20 @@ namespace Publy.Infra.Repositories
       _context = context;
     }
 
+    public virtual async Task<Collaborator> GetByEmail(string email)
+    {
+      Collaborator collaborator = await _context.Collaborators
+                                  .Where
+                                  (
+                                       x =>
+                                           x.Email.ToLower() == email.ToLower()
+                                   )
+                                   .AsNoTracking()
+                                   .FirstOrDefaultAsync();
+
+      return collaborator;
+    }
+
     public virtual async Task<Collaborator> GetByName(string name)
     {
       Collaborator collaborator = await _context
