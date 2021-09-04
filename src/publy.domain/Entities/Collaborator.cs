@@ -11,7 +11,7 @@ namespace Publy.Domain.Entities
     public string Password { get; private set; }
     public DateTime BirthDate { get; private set; }
     public ICollection<CollaboratorDepartment> Departments { get; private set; }
-    public IList<string> SocialNetworks { get; private set; }
+    public List<string> SocialNetworks { get; private set; }
     public string DescriptionProfile { get; private set; }
 
     protected Collaborator()
@@ -21,7 +21,7 @@ namespace Publy.Domain.Entities
       string email,
       string password,
       DateTime birthDate,
-      IList<string> socialNetworks,
+      List<string> socialNetworks,
       string descriptionProfile
       )
     {
