@@ -4,14 +4,14 @@
     "/home/melkdesousa/Developer/Projects/publy/src/publy.infra/publy.infra.csproj": {}
   },
   "projects": {
-    "/home/melkdesousa/Developer/Projects/publy/src/publy.infra/publy.infra.csproj": {
+    "/home/melkdesousa/Developer/Projects/publy/src/publy.core/publy.core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/melkdesousa/Developer/Projects/publy/src/publy.infra/publy.infra.csproj",
-        "projectName": "publy.infra",
-        "projectPath": "/home/melkdesousa/Developer/Projects/publy/src/publy.infra/publy.infra.csproj",
+        "projectUniqueName": "/home/melkdesousa/Developer/Projects/publy/src/publy.core/publy.core.csproj",
+        "projectName": "publy.core",
+        "projectPath": "/home/melkdesousa/Developer/Projects/publy/src/publy.core/publy.core.csproj",
         "packagesPath": "/home/melkdesousa/.nuget/packages/",
-        "outputPath": "/home/melkdesousa/Developer/Projects/publy/src/publy.infra/obj/",
+        "outputPath": "/home/melkdesousa/Developer/Projects/publy/src/publy.core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/melkdesousa/.nuget/NuGet/NuGet.Config"
@@ -37,6 +37,146 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/melkdesousa/Developer/Projects/publy/src/publy.domain/publy.domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/melkdesousa/Developer/Projects/publy/src/publy.domain/publy.domain.csproj",
+        "projectName": "publy.domain",
+        "projectPath": "/home/melkdesousa/Developer/Projects/publy/src/publy.domain/publy.domain.csproj",
+        "packagesPath": "/home/melkdesousa/.nuget/packages/",
+        "outputPath": "/home/melkdesousa/Developer/Projects/publy/src/publy.domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/melkdesousa/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/melkdesousa/Developer/Projects/publy/src/publy.core/publy.core.csproj": {
+                "projectPath": "/home/melkdesousa/Developer/Projects/publy/src/publy.core/publy.core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "fluentvalidation": {
+              "target": "Package",
+              "version": "[10.3.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/melkdesousa/Developer/Projects/publy/src/publy.infra/publy.infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/melkdesousa/Developer/Projects/publy/src/publy.infra/publy.infra.csproj",
+        "projectName": "publy.infra",
+        "projectPath": "/home/melkdesousa/Developer/Projects/publy/src/publy.infra/publy.infra.csproj",
+        "packagesPath": "/home/melkdesousa/.nuget/packages/",
+        "outputPath": "/home/melkdesousa/Developer/Projects/publy/src/publy.infra/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/melkdesousa/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/melkdesousa/Developer/Projects/publy/src/publy.domain/publy.domain.csproj": {
+                "projectPath": "/home/melkdesousa/Developer/Projects/publy/src/publy.domain/publy.domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
