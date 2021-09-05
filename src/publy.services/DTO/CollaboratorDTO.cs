@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text.Json.Serialization;
 using Publy.Domain.Entities;
 
-namespace publy.services.DTO
+namespace Publy.Services.DTO
 {
   public class CollaboratorDTO
   {
@@ -14,13 +14,13 @@ namespace publy.services.DTO
     [JsonIgnore]
     public string Password { get; set; }
     public DateTime BirthDate { get; set; }
-    public List<string> SocialNetworks { get; set; }
+    public string SocialNetworks { get; set; }
     public string DescriptionProfile { get; set; }
 
     public CollaboratorDTO()
     { }
 
-    public CollaboratorDTO(Guid id, string name, string email, string password, DateTime birthDate, List<string> socialNetworks, string descriptionProfile)
+    public CollaboratorDTO(Guid id, string name, string email, string password, DateTime birthDate, string socialNetworks, string descriptionProfile)
     {
       Id = id;
       Name = name;

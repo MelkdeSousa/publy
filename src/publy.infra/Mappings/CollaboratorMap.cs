@@ -40,7 +40,7 @@ namespace Publy.Infra.Mappings
 
       builder.Property(c => c.SocialNetworks)
         .HasColumnName("social_networks")
-        .HasColumnType("text[]");
+        .HasColumnType("text");
 
       builder.Property(c => c.DescriptionProfile)
         .HasColumnName("description_profile")
