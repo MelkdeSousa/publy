@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
-using publy.services.DTO;
+using Publy.Services.DTO;
 using Publy.Core.Exceptions;
 using Publy.Domain.Entities;
 using Publy.Infra.Interfaces;
