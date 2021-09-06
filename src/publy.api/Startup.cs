@@ -47,6 +47,11 @@ namespace Publy.Api
       {
         cfg.CreateMap<Collaborator, CollaboratorDTO>().ReverseMap();
         cfg.CreateMap<CreateCollaboratorViewModel, CollaboratorDTO>().ReverseMap();
+        cfg.CreateMap<UpdateCollaboratorViewModel, CollaboratorDTO>().ReverseMap();
+
+        cfg.CreateMap<Department, DepartmentDTO>().ReverseMap();
+        cfg.CreateMap<CreateDepartmentViewModel, DepartmentDTO>().ReverseMap();
+        cfg.CreateMap<UpdateDepartmentViewModel, DepartmentDTO>().ReverseMap();
       });
 
       services.AddSingleton(autoMapperConfiguration.CreateMapper());
@@ -57,8 +62,12 @@ namespace Publy.Api
 
       services.AddSingleton(s => Configuration);
       services.AddDbContext<PublyContext>(options => options.UseNpgsql(Configuration.GetConnectionString("PublyDB")));
+
       services.AddScoped<ICollaboratorService, CollaboratorService>();
       services.AddScoped<ICollaboratorRepository, CollaboratorRepository>();
+
+      services.AddScoped<IDepartmentService, DepartmentService>();
+      services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 
       #endregion
 

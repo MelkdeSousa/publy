@@ -16,7 +16,7 @@ Webapp to publicize your company's contributors profile
   - [x] PostgreSQL with Entity Framework (ORM)
   - CRUD of Entities:
       - [x] Collaborator:
-          - id (ou guid)
+          - id
           - name
           - email
           - age
@@ -29,7 +29,7 @@ Webapp to publicize your company's contributors profile
       - [] Group & Department:
           - id
           - name
-  - [] Consider that: A collaborator MUST be related to one or more departments - where the existing departments are:
+  - [x] Consider that: A collaborator MUST be related to one or more departments - where the existing departments are:
       - FINANCEIRO
       - ADMINISTRAÇÃO
       - DIREÇÃO
