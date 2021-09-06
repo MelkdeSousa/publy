@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Publy.Infra.Context;
@@ -9,9 +10,10 @@ using Publy.Infra.Context;
 namespace publy.infra.Migrations
 {
     [DbContext(typeof(PublyContext))]
-    partial class PublyContextModelSnapshot : ModelSnapshot
+    [Migration("20210906120133_CreateGroupEntityAndRelationshipWithCollaborator")]
+    partial class CreateGroupEntityAndRelationshipWithCollaborator
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

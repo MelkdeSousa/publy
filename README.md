@@ -26,7 +26,7 @@ Webapp to publicize your company's contributors profile
           - groups
           - social networks
           - description profile
-      - [] Group & Department:
+      - [x] Group & Department:
           - id
           - name
   - [x] Consider that: A collaborator MUST be related to one or more departments - where the existing departments are:
@@ -37,7 +37,7 @@ Webapp to publicize your company's contributors profile
       - INFRAESTRUTURA
       - DESENVOLVIMENTO
       - COMERCIAL
-  - [] Consider that: The collaborator **MUST be associated with at *least one group*** - where the initial existing groups are:
+  - [x] Consider that: The collaborator **MUST be associated with at *least one group*** - where the initial existing groups are:
       - CLT
       - PJ
       - FREELANCER

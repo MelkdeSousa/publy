@@ -11,6 +11,7 @@ namespace Publy.Domain.Entities
     public string Password { get; private set; }
     public DateTime BirthDate { get; private set; }
     public ICollection<CollaboratorDepartment> Departments { get; private set; }
+    public ICollection<CollaboratorGroup> Groups { get; private set; }
     public string SocialNetworks { get; private set; }
     public string DescriptionProfile { get; private set; }
 

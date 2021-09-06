@@ -15,6 +15,7 @@ namespace Publy.Infra.Context
 
     public virtual DbSet<Collaborator> Collaborators { get; set; }
     public virtual DbSet<Department> Departments { get; set; }
+    public virtual DbSet<Group> Groups { get; set; }
     public virtual DbSet<CollaboratorDepartment> CollaboratorsDepartments { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -28,7 +29,9 @@ namespace Publy.Infra.Context
 
       modelBuilder.ApplyConfiguration(new CollaboratorMap());
       modelBuilder.ApplyConfiguration(new DepartmentMap());
+      modelBuilder.ApplyConfiguration(new GroupMap());
       modelBuilder.ApplyConfiguration(new CollaboratorDepartmentMap());
+      modelBuilder.ApplyConfiguration(new CollaboratorGroupMap());
     }
   }
 }
