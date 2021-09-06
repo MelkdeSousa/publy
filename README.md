@@ -1,4 +1,5 @@
 # publy
+
 Webapp to publicize your company's contributors profile
 
 ## Project Scope
@@ -12,9 +13,9 @@ Webapp to publicize your company's contributors profile
 
   - [x] Diagram Entity-Relationship (DER)
   - [x] API Restful in .NET Core 5
-  - PostgreSQL with Entity Framework (ORM)
+  - [x] PostgreSQL with Entity Framework (ORM)
   - CRUD of Entities:
-      - Collaborator:
+      - [x] Collaborator:
           - id (ou guid)
           - name
           - email
@@ -25,10 +26,10 @@ Webapp to publicize your company's contributors profile
           - groups
           - social networks
           - description profile
-      - Group & Department:
+      - [] Group & Department:
           - id
           - name
-  - Consider that: A collaborator MUST be related to one or more departments - where the existing departments are:
+  - [] Consider that: A collaborator MUST be related to one or more departments - where the existing departments are:
       - FINANCEIRO
       - ADMINISTRAÇÃO
       - DIREÇÃO
@@ -36,7 +37,7 @@ Webapp to publicize your company's contributors profile
       - INFRAESTRUTURA
       - DESENVOLVIMENTO
       - COMERCIAL
-  - Consider that: The collaborator **MUST be associated with at *least one group*** - where the initial existing groups are:
+  - [] Consider that: The collaborator **MUST be associated with at *least one group*** - where the initial existing groups are:
       - CLT
       - PJ
       - FREELANCER
@@ -46,15 +47,15 @@ Webapp to publicize your company's contributors profile
 ## Tips
 
 - The candidate will be able to define the organization that he/she deems most suitable for the project, however, it is advisable to have at least the following layers:
-    - Controller (facade layer responsible for implementing the API)
-    - Services (services layer responsible for implementing use case and services)
-    - Repository (persistency layer responsible for implementing database communication and operations)
+    - [x] Controller (facade layer responsible for implementing the API)
+    - [x] Services (services layer responsible for implementing use case and services)
+    - [x] Repository (persistency layer responsible for implementing database communication and operations)
 
 ##  Differentials
 
-  - Swagger;
-  - AutoMapper to create DTOs
-  - OO: Classes, Interfaces, Polymorphism, Encapsulation, Abstraction
-  - Parameterization to perform search filter in the reading API using the “name” field as a clause.
+  - [x] Swagger;
+  - [x] AutoMapper to create DTOs
+  - [x] OO: Classes, Interfaces, Polymorphism, Encapsulation, Abstraction
+  - Parameterization to perform search filter in the reading API using the "name" field as a clause.
   - Test (NUnit)
   - Deploy with Docker Containers
