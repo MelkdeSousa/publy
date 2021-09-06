@@ -19,24 +19,24 @@ namespace Publy.Infra.Repositories
 
     public virtual async Task<Department> GetByName(string name)
     {
-      Department collaborator = await _context
+      Department department = await _context
                           .Departments
                           .Where(c => c.Name.ToLower() == name.ToLower())
                           .AsNoTracking()
                           .FirstOrDefaultAsync();
 
-      return collaborator;
+      return department;
     }
 
     public virtual async Task<List<Department>> SearchByName(string name)
     {
-      List<Department> collaborators = await _context
+      List<Department> departments = await _context
                                             .Departments
                                             .Where(c => c.Name.ToLower().Contains(name.ToLower()))
                                             .AsNoTracking()
                                             .ToListAsync();
 
-      return collaborators;
+      return departments;
     }
   }
 }

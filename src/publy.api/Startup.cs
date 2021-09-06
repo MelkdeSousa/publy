@@ -56,6 +56,10 @@ namespace Publy.Api
         cfg.CreateMap<Group, GroupDTO>().ReverseMap();
         cfg.CreateMap<CreateGroupViewModel, GroupDTO>().ReverseMap();
         cfg.CreateMap<UpdateGroupViewModel, GroupDTO>().ReverseMap();
+
+        cfg.CreateMap<CollaboratorDepartment, CollaboratorDepartmentDTO>().ReverseMap();
+        cfg.CreateMap<CreateCollaboratorDepartmentViewModel, CollaboratorDepartmentDTO>().ReverseMap();
+        cfg.CreateMap<UpdateCollaboratorDepartmentViewModel, CollaboratorDepartmentDTO>().ReverseMap();
       });
 
       services.AddSingleton(autoMapperConfiguration.CreateMapper());
@@ -75,6 +79,9 @@ namespace Publy.Api
 
       services.AddScoped<IGroupService, GroupService>();
       services.AddScoped<IGroupRepository, GroupRepository>();
+
+      services.AddScoped<ICollaboratorDepartmentService, CollaboratorDepartmentService>();
+      services.AddScoped<ICollaboratorDepartmentRepository, CollaboratorDepartmentRepository>();
 
       #endregion
 
